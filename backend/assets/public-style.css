@@ -1,0 +1,51 @@
+ul.wotrapi_userInputs {display: flex !important;/* column-count: 3; */gap: 20px 60px !important;flex-wrap: wrap !important;justify-content: flex-start !important;margin: 30px 0;}
+li.wotrapi_userSingleInput { display: flex;justify-content: space-between;width: 40%;align-items: center;}
+.wotrapi_wrapper{margin: 0 20px;}
+.wotrapi_wrapper .d-none{display:none;}
+.wotrapi_wrapper table{ margin: 20px 0; }
+.wotrapi_wrapper th {padding: 10px; padding: 20px 5px !important; border-bottom: 2px solid;}
+.wotrapi_wrapper td {padding: 5px;}
+.wotrapi_wrapper th{font-size: 18px;}
+.wotrapi_wrapper td{font-size: 16px;}
+.wotrapi_wrapper .notice, .wotrapi_wrapper div.error, .wotrapi_wrapper div.updated{margin: 10px 0 0 0;}
+.wotrapi_wrapper .toggle-box-switch-circle {position: absolute !important;left: 0 !important;border-radius: 50% !important;height: 24px !important;width: 24px !important;background: #fff !important;top: 50% !important;transform: translateY(-50%) !important;left: 2px !important;transition: all ease .3s !important;}
+.wotrapi_wrapper .toggle-box-switch-board {position: relative !important;width: 50px !important;height: 28px !important;background: #cbd5e0 !important;border-radius: 9999px !important;transition: all ease .3s !important;}
+.wotrapi_wrapper .toggle-box-switch-board input {position: absolute !important;visibility: hidden !important;}
+.wotrapi_wrapper .toggle-box-switch-board.active-toggle, .wotrapi_wrapper .toggle-box-switch-board.default_active {background-color: #54a699 !important;}
+.wotrapi_wrapper .toggle-box-switch-circle.active-toggle, .wotrapi_wrapper .toggle-box-switch-circle.default_active{ left: calc(100% - 26px) !important;}
+.wotrapi_wrapper .pointer{ cursor: pointer !important;}
+.wotrapi_wrapper ul.wotrapi_userInputs > li {width: 100% !important;max-width: 21% !important;}
+.wotrapi_wrapper table {background: #ffff;border: none;text-align: left;border-top-width: 0px;border-right-width: 0px;border-bottom-width: 0px; border-left-width: 0px;}
+.wotrapi_wrapper tr {border: 1px solid #fff;}
+.wotrapi_wrapper tr:nth-child(even) {background: #ededed;border: 1px solid #ededed;}
+.wotrapi_wrapper tr:nth-child(odd) {background: white;}
+.wotrapi_wrapper td a {text-decoration: none;}
+.wotrapi_wrapper .mt25 { margin-top: 25px !important;}
+.wotrapi_wrapper a.wotrapi_editSlug {position: relative;top: 5px;right: 5px;}
+.wotrapi_customheader {padding: 20px 35px 25px;background: #fff;margin-left: -20px;}
+.wotrapi_customheader h2 {font-size: 30px;line-height: 40px;text-align: center;display: block;box-sizing: border-box;position: relative;margin: 0;}
+/* #wpcontent{padding-left: 0px !important;} */
+.text-center {text-align: center;}
+.import-form input[type="text"] {margin-top: 75px;padding: 10px;width: 100%;max-width: 600px;font-size: 18px;box-shadow: 0 5px 10px rgba(0,0,0,0.5);border: 1px solid transparent; transition:  all ease 0.4s;}
+.import-form input[type="text"]:focus{border: 1px solid #2271b1;}
+.import-form input.button-primary {margin-top: 25px !important;width: 100%;max-width: 180px;padding: 3px 3px !important;font-size: 20px !important;box-shadow: 0 8px 15px rgba(0,0,0,0.2); transition:  all ease 0.4s;}
+.import-form input.button-primary:hover{box-shadow: none;}
+.wot_success_spacing, .wot_error_spacing{margin: 15px 10px;}
+
+@media (max-width: 1350px) {
+    ul.wotrapi_userInputs{gap: 20px 17% !important;}
+    .wotrapi_wrapper ul.wotrapi_userInputs > li {    max-width: 40% !important;}
+}
+@media (max-width: 1080px) {
+    ul.wotrapi_userInputs{gap: 20px 17% !important;}
+}
+@media (max-width: 767px) {
+    .wot_table_responsive {overflow-x:auto}
+    ul.wotrapi_userInputs {margin: 30px auto; justify-content: center !important;}
+    .wotrapi_wrapper ul.wotrapi_userInputs > li { max-width: 50% !important;}
+    input.wotrapi_default_endpoint { display: block; margin: 20px auto;}
+}
+@media (max-width: 560px) {
+    .wotrapi_wrapper ul.wotrapi_userInputs > li{max-width:100% !important}
+    .wotrapi_btn_edit_endpoint { margin: 20px auto !important; display: block !important;}
+}
